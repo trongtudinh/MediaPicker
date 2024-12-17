@@ -12,7 +12,7 @@ public enum MediaType {
 
 public struct Media: Identifiable, Equatable {
     public var id = UUID()
-    internal let source: MediaModelProtocol
+    public let source: MediaModelProtocol
 
     public static func == (lhs: Media, rhs: Media) -> Bool {
         lhs.id == rhs.id
